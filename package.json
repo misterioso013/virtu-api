@@ -1,0 +1,26 @@
+{
+  "name": "virtu-api",
+  "module": "src/index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "dev": "bun --watch src/index.ts",
+    "start": "bun src/index.ts",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio"
+  },
+  "dependencies": {
+    "@fastify/cors": "^9.0.1",
+    "@misterioso013/ipcli": "^1.0.4",
+    "drizzle-orm": "^0.31.0",
+    "fastify": "^4.27.0",
+    "zod": "^3.23.8"
+  }
+}
